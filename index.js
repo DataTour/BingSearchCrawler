@@ -14,7 +14,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.get('/' (req, res) => {
+app.get('/', (req, res) => {
         res.status(200).json({ success: 'Bing Seach API online'})
 })
 
