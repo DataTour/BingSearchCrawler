@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
         res.status(200).json({ success: 'Bing Seach API online'})
 })
 
-app.post('/v1/:query', async(req, res) => {
+app.get('/v1/:query', async(req, res) => {
     const { query } = req.params
 
     try {
