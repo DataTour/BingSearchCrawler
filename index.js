@@ -21,6 +21,7 @@ app.post('/', async(req, res) => {
 
         function bingSearch(search, page) {
             const query = search.replace(' ', '+')
+            
             return {
                 uri: `https://www.bing.com/search?q=${query}&first=${page}&FORM=PERE2`,
                 transform: async function (body) {
@@ -65,7 +66,7 @@ app.post('/', async(req, res) => {
                     })
 
                 }
-                
+
             } 
 
 
