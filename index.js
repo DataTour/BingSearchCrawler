@@ -47,7 +47,6 @@ app.post('/', async(req, res) => {
 
             for(let init = 0; init < 902; init++) {
                 
-
                 if (init%7==0) {
                     
                     rp(bingSearch(query, init)).then(($) => {
@@ -66,6 +65,7 @@ app.post('/', async(req, res) => {
                     })
 
                 }
+                
             } 
 
 
